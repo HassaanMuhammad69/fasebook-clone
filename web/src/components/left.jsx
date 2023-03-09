@@ -5,7 +5,7 @@ import { SiFacebookgaming } from "react-icons/si";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 
 
-// import AOTImage from '../img/AOT.jpg'
+import AOTImage from '../img/AOT.jpg'
 import NarutoImage from '../img/naruto.jpg'
 import JjkImage from '../img/jjk.jpg'
 
@@ -38,7 +38,7 @@ const left = (props) => {
                 <div><h3>Groups</h3></div>
 
                 <div className="LiningAllp">
-                    {/* <img src={AOTImage} alt="" width={30} /> */}
+                    <img src={AOTImage} alt="" width={30} />
                     <p>Attack on titan</p>
                 </div>
 
