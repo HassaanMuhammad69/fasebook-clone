@@ -1,0 +1,81 @@
+.rightside{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 290px;
+    height: 100%;
+    margin-top: 100px;
+    
+    background-color: #f0f1f1f0;
+    border: 1px solid black ;
+    border-radius: 5px;
+    padding: 15px;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+
+.ad{
+    display: flex;
+    flex-direction: row;
+}
+.ad1{
+    margin-top: 5px;
+    display: flex;
+    flex-direction:row ;
+}
+.brandText{
+    margin-top: 0px;
+    text-decoration: none;
+    margin-left: 5px;
+    
+}
+
+.brandTextHeading{
+    margin-top: 40px;
+    margin-left: 5px;
+    
+}
+
+/* CONTACT BAR */
+.bar{
+    display: inline-flex;
+    align-items: baseline;
+    
+}
+.icons{
+    margin-left: 150px;
+}
+.video{
+    padding-left: 138px;
+}
+.dots{
+    padding-left: 4px;
+
+}
+.mag{
+    padding-left: 20px;
+}
+
+/* Online contact */
+
+.CDprofile{
+    border-radius: 50px;
+    height: fit-content;
+}
+
+.cd{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.cdText{
+    margin-left: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+

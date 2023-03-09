@@ -1,0 +1,32 @@
+.leftSide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    margin-top: 100px;
+    
+    padding-left: 10px;
+   
+    background-color: #f0f1f1f0;
+    border: 1px solid black ;
+    border-radius: 5px;
+}
+
+p {
+    padding-left: 12px;
+    font-weight: 200;
+    font-size: 16px;
+    font-family: 'Roboto', 'Droid Sans', Helvetica, sans-serif;
+}
+
+
+.i1 {
+    color: rgb(0, 106, 255);
+}
+
+.LiningAllp {
+    display: flex;
+    align-items: center;
+
+}

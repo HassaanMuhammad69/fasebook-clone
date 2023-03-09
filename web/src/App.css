@@ -1,0 +1,51 @@
+.navBar {
+  /* display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  background-color:#f0f1f1f0 ;
+  border: 1px solid black;
+}
+.fbIcon{
+  color: rgb(0, 106, 255);
+  margin-top: 15px;
+  margin-right: 5px;
+  font-size: 42px;
+}
+.homeButton{
+  margin-left: 500px;
+}
+.logoutButton{
+  margin-left: 450px;
+  margin-top: 30px;
+
+}
+
+.navBar>ul {
+  display: flex;
+  list-style-type: none;
+}
+
+
+.navBar>ul>li>a {
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.loginButton{
+  margin-left: 500px;
+}
+
+body {
+  background-color: #f0f1f128;
+}
