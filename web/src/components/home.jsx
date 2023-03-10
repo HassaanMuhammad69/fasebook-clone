@@ -9,7 +9,7 @@ import InfiniteScroll from 'react-infinite-scroller';
 import './home.css'
 
 
-import {  FaThumbsUp,FaCommentAlt,FaShare } from "react-icons/fa";
+import { FaThumbsUp, FaCommentAlt, FaShare } from "react-icons/fa";
 
 import Left from './left';
 import Right from './right';
@@ -155,7 +155,7 @@ function Home() {
 
   return (
     <div className='homeMain'>
-     
+
       <div className='postbox'>
         <form onSubmit={myFormik.handleSubmit} >
           <textarea
@@ -206,7 +206,7 @@ function Home() {
           loader={<div className="loader" key={0}>Loading ...</div>}
         >
           {tweets.map((eachProduct, i) => (
-            <div key={i} style={{ border: "1px solid black", padding: 10, margin: 10,  borderRadius: 15 , marginLeft:560, backgroundColor:"#f0f1f1f0" }}>
+            <div key={i} style={{ border: "1px solid black", padding: 10, margin: 10, borderRadius: 15, marginLeft: 560, backgroundColor: "#f0f1f1f0" }}>
               <h2>{eachProduct?.owner?.firstName}</h2>
               <div>{moment(eachProduct?.createdOn).fromNow()} </div>
               <p>{eachProduct?.text}</p>
@@ -216,72 +216,13 @@ function Home() {
               <br />
               <hr />
 
-            <div className='postFooter'>
-              <div ><FaThumbsUp className='icon'></FaThumbsUp>Like</div>
-              <div><FaCommentAlt className='icon'></FaCommentAlt>Comment</div>
-              <div><FaShare className='icon'></FaShare>Share</div>
-            </div>
-    <hr />
+              <div className='postFooter'>
+                <div ><FaThumbsUp className='icon'></FaThumbsUp>Like</div>
+                <div><FaCommentAlt className='icon'></FaCommentAlt>Comment</div>
+                <div><FaShare className='icon'></FaShare>Share</div>
+              </div>
+              <hr />
 
-
-              {/* <button onClick={() => {
-                deleteTweet(eachProduct._id)
-              }}>delete</button>
-
-              <button onClick={() => {
-                editMode(eachProduct)
-              }}>edit</button>
-
-              {(isEditMode && editingTweet._id === eachProduct._id) ?
-                <div>
-
-                  <form onSubmit={editFormik.handleSubmit}>
-                    <input
-                      id="tweetsText"
-                      placeholder="Product Name"
-                      value={editFormik.values.tweetsText}
-                      onChange={editFormik.handleChange}
-                    />
-                    {
-                      (editFormik.touched.tweetsText && Boolean(editFormik.errors.tweetsText)) ?
-                        <span style={{ color: "red" }}>{editFormik.errors.tweetsText}</span>
-                        :
-                        null
-                    }
-
-                    <br />
-                    <input
-                      id="productPrice"
-                      placeholder="Product Price"
-                      value={editFormik.values.productPrice}
-                      onChange={editFormik.handleChange}
-                    />
-                    {
-                      (editFormik.touched.productPrice && Boolean(editFormik.errors.productPrice)) ?
-                        <span style={{ color: "red" }}>{editFormik.errors.productPrice}</span>
-                        :
-                        null
-                    }
-
-                    <br />
-                    <input
-                      id="productDescription"
-                      placeholder="Product Description"
-                      value={editFormik.values.productDescription}
-                      onChange={editFormik.handleChange}
-                    />
-                    {
-                      (editFormik.touched.productDescription && Boolean(editFormik.errors.productDescription)) ?
-                        <span style={{ color: "red" }}>{editFormik.errors.productDescription}</span>
-                        :
-                        null
-                    }
-
-                    <br />
-                    <button type="submit"> Submit </button>
-                  </form>
-
-                </div> : null} */}
 
             </div>
           ))}
@@ -291,12 +232,12 @@ function Home() {
 
 
 
-     
+
       <div>
-          <Left/>
-          <Right/>
-          
-       </div>
+        <Left />
+        <Right />
+
+      </div>
 
     </div >
 

@@ -125,12 +125,6 @@ function ForgetPassword() {
 
                 }
 
-
-
-
-          
-
-
             <p>{result}</p>
         </>
     )
