@@ -2,10 +2,10 @@ import mongoose from 'mongoose';
 
 
 let tweetSchema = new mongoose.Schema({
-    text: { type: String, required: true }, 
-    owner: { type: mongoose.ObjectId, ref: "users" , required: true },
-    imageUrl:{type:String},
-    isDeleted:{type: Boolean, default: false},
+    text: { type: String, required: true },
+    owner: { type: mongoose.ObjectId, ref: "users", required: true },
+    imageUrl: { type: String },
+    isDeleted: { type: Boolean, default: false },
     createdOn: { type: Date, default: Date.now }
 });
 export const tweetModel = mongoose.model('products', tweetSchema);
@@ -23,15 +23,19 @@ export const userModel = mongoose.model('users', userSchema);
 
 const otpSchema = new mongoose.Schema({
     otp: String,
-    email: String, 
-    isUsed: {type: Boolean, default: false },
+    email: String,
+    isUsed: { type: Boolean, default: false },
     createdOn: { type: Date, default: Date.now },
 });
 export const otpModel = mongoose.model('Otps', otpSchema);
 
 
 
-const mongodbURI = process.env.mongodbURI || "mongodb+srv://dbuser:dbpassword@cluster0.gq9n2zr.mongodb.net/abcdatabase?retryWrites=true&w=majority";
+const mongodbURI = process.env.mongodbURI ||
+    "mongodb+srv://heck:heck123@cluster0.oud3rz1.mongodb.net/?retryWrites=true&w=majority"
+
+
+// "mongodb+srv://dbuser:dbpassword@cluster0.gq9n2zr.mongodb.net/abcdatabase?retryWrites=true&w=majority";
 
 // // saad 
 // // "mongodb+srv://saad:sdsdsd@cluster0.9bemtsg.mongodb.net/ecommerce?retryWrites=true&w=majority";
@@ -40,7 +44,7 @@ const mongodbURI = process.env.mongodbURI || "mongodb+srv://dbuser:dbpassword@cl
 mongoose.connect(mongodbURI);
 
 ////////////////mongodb connected disconnected events///////////////////////////////////////////////
- 
+
 mongoose.connection.on('connected', function () {//connected
     console.log("Mongoose is connected");
 });
